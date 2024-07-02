@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Konwerter Jednostek</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Konwerter Jednostek</h1>
+    <form action="/convert" method="post">
+        <label for="wartosc">Wprowadź wartość:</label>
+        <input type="number" id="wartosc" name="wartosc" step="0.01" required>
+
+        <label for="typKonwersji">Wybierz typ konwersji:</label>
+        <select id="typKonwersji" name="typKonwersji">
+            <option value="kmNaMile">Kilometry na Mile</option>
+            <option value="mileNaKm">Mile na Kilometry</option>
+        </select>
+
+        <button type="submit">Konwertuj</button>
+    </form>
+</div>
+</body>
+</html>

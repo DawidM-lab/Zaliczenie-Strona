@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Wynik Konwersji</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Wynik Konwersji</h1>
+    <p th:text="'Wartość początkowa: ' + ${wartoscPoczatkowa} + ( ${typKonwersji} == 'kmNaMile' ? ' km' : ' mile')"></p>
+    <p th:text="'Wynik: ' + ${wynik} + ( ${typKonwersji} == 'kmNaMile' ? ' mile' : ' km')"></p>
+    <a href="/">Konwertuj ponownie</a>
+</div>
+</body>
+</html>
